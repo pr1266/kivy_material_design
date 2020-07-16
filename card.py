@@ -36,18 +36,12 @@ Screen:
         spacing: "10dp"
 
         MDToolbar:
-            canvas.before:
-                Color:
-                    rgba: (1, 0, 1, 1)
-                Rectangle:
-                    pos: self.pos
-                    size: self.size
+            md_bg_color: app.theme_cls.accent_color
             elevation: 10
             title: "Pr1266"
             color: (1, 1, 0, 1)
-
+            specific_text_color: (0, 0, 0, 1)
         ScrollView:
-
             MDList:
                 id: md_list
                 padding: 0
