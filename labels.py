@@ -36,12 +36,14 @@ class Component(MDBoxLayout):
             )
         )
         
-        self.add_widget(MDIcon(icon = 'language-python', halign = 'center'))
+        self.add_widget(MDIcon(icon = 'language-python', halign = 'center', color = (1, 1, 1, 1)))
         
 class DemoApp(MDApp):
 
     def build(self):
-
+        
+        #TODO baraye theme Dark :
+        #!self.theme_cls.theme_style = "Dark"
         comp = Component()
         return comp
 
